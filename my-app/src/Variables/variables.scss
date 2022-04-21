@@ -1,1 +1,27 @@
+// Colors
 $blackColor: rgb(24, 24, 24);
+$whiteColor: rgb(224, 224, 224);
+$redColor: rgb(230, 31, 31);
+$tealColor: rgb(25, 162, 162);
+
+// Fonts
+$titleFont: Arial, Helvetica, sans-serif;
+$bodyFont: "Times New Roman", Times, serif;
+
+@mixin buttonStyle($color, $fontSize) {
+  width: 200px;
+  height: 40px;
+  background-color: $color;
+  border: none;
+  border-radius: 8px;
+  color: $whiteColor;
+  font-size: $fontSize;
+}
+
+@mixin paragraphStyle($color, $fontsize){
+  color: $color;
+  font-size: $fontsize;
+  border: solid;
+  background-color: gray;
+  height: 50px;
+}
