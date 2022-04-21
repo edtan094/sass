@@ -1,0 +1,24 @@
+@import '../Variables/variables.scss';
+
+.main-page{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    color: $redColor
+  }
+  button {
+    @include buttonStyle($redColor, 25px);
+  }
+}
+
+.body {
+  h1 {
+    margin: 10px;
+    color: $tealColor;
+  }
+  p{
+    @include paragraphStyle($whiteColor, $bodyFont)
+  }
+}
